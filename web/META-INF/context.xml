@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Context antiJARLocking="true" path="/spartanbank_api">
+    <Resource
+        type="javax.sql.DataSource"
+        auth="Container"
+        name="jdbc/banco"
+        driverClassName="com.mysql.jdbc.Driver"
+        url="jdbc:mysql://localhost:3306/banco"
+        username="banco"
+        password="banco"
+        maxIdle="30"
+        maxTotal="100"
+        maxActive="100"
+        maxWaitMillis="10000"
+        maxWait="10000"
+        validationQuery="SELECT 1 FROM dual">
+    </Resource>
+</Context>
