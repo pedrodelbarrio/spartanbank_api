@@ -11,5 +11,6 @@
   
     <bean class="com.fpmislata.spartanbank_api.presentation.json.impl.JsonTransformerImplJackson" />
     <bean class="com.fpmislata.spartanbank_api.presentation.security.impl.WebSessionProviderImpl" />
+    <bean class="com.fpmislata.spartanbank_api.presentation.database.impl.DataBaseMigrationImplFlyway" />
     
 </beans>
