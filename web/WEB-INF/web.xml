@@ -21,6 +21,10 @@
         </param-value>
     </context-param>
     
+    <listener>
+        <listener-class>com.fpmislata.spartanbank_api.presentation.database</listener-class>
+    </listener>
+    
     <filter>
         <filter-name>FilterImplSecurity</filter-name>
         <filter-class>com.fpmislata.spartanbank_api.presentation.security.FilterImplSecurity</filter-class>

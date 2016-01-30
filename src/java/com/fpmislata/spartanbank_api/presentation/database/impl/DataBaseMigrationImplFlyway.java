@@ -21,7 +21,7 @@ public class DataBaseMigrationImplFlyway implements DataBaseMigration {
             DataSource dataSource = dataSourceFactory.getDataSource();
             Flyway flyway = new Flyway();
             flyway.setDataSource(dataSource);
-            flyway.setLocations("el.paquete.con.los.scripts.de.la.base.de.datos");
+            flyway.setLocations("com.fpmislata.spartanbank_service.persistence.migration");
             flyway.setEncoding("utf-8");
             flyway.migrate();
         } catch (Exception ex) {
